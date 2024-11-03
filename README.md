@@ -115,7 +115,20 @@ Data = 2, which means that two environment variables have been created. Everythi
 <br>
 
 ### Create a DaemonSet
-TODOO<br>
+DaemonSet is used to ensure that a pod runs on each node in the cluster, including the nodes where the application pods are deployed.<br>
+Result: Enhanced availability and fault tolerance of the application through redundancy and load distribution.<br>
+<br>
+First, the daemonset.yaml file is adjusted.<br>
+Here the placeholder of the namespace must be replaced with my namespace:<br>
+TODO: Insert image adjustment daemonset yaml<br>
+
+Next, the daemonset.yaml file is applied:<br>
+```
+kubectl apply -f daemonset.yaml
+```
+
+Verification of the DaemonSet:<br>
+TODO: Insert image verification daemonset<br>
 <br>
 
 ### Expose application within the cluster
