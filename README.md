@@ -1,6 +1,7 @@
 # Understanding ConfigMaps, DaemonSets, Kubernetes Services, Secrets & Persistent Volume Claims
 This repository was created as part of IBM's "Introduction to Containers, Kubernetes and OpenShift" course.<br>
-It's a practice project about Kubernetes using Docker.
+It's a practice project about Kubernetes using Docker.<br>
+Much of the code was cloned from the IBM repository: https://github.com/ibm-developer-skills-network/containers-project.git<br>
 <br>
 <br>
 
