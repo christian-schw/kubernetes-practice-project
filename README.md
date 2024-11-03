@@ -148,8 +148,22 @@ TODO: Insert image verification service<br>
 <br>
 
 ### Create and manage secrets
-TODOO<br>
+K8s Secrets are used to securely store sensitive information (such as passwords, tokens and SSH keys).<br>
+As with ConfigMap, literals are used in the practice project to create Secrets.<br>
 <br>
+Two environment variables should be created:<br>
+- Key: username, Value: myuser
+- Key: password, Value: mysecretpassword
+<br>
+This results in the following command:<br>
+
+```
+kubectl create secret generic myapp-secret --from-literal=username=myuser --from-literal=password=mysecretpassword
+```
+
+Verification of the Secret:<br>
+TODO: Insert image verification secret<br>
+Again: Data = 2, which means that two environment variables have been created. Everything fits.<br>
 
 ### Provide storage for application
 TODOO<br>
