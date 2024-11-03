@@ -166,10 +166,16 @@ TODO: Insert image verification secret<br>
 Again: Data = 2, which means that two environment variables have been created. Everything fits.<br>
 
 ### Provide storage for application
-TODOO<br>
+To provide storage for the application, two K8s objects are used:
+- PersistentVolume (PV): Storage resource provisioned by an administrator in the cluster that exists independently of any Pod that might use it.
+- PersistentVolumeClaim (PVC): Request for storage by a user or a Pod which consumes PersistentVolumes. PVCs provide a way for users to request the storage resources they need.
+<br>
+The definitions of the two objects can be found in the file volume-and-pvc.yaml.<br>
+Both definitions are separated from each other by three dashes (---).<br>
+<br>
+PersistentVolume provides 1 gigabyte of storage and the PVC requests this 1 gigabyte of storage.<br>
 <br>
 <br>
-
 
 
 ## Getting Started
