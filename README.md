@@ -123,6 +123,7 @@ Here the placeholder of the namespace must be replaced with my namespace:<br>
 TODO: Insert image adjustment daemonset yaml<br>
 
 Next, the daemonset.yaml file is applied:<br>
+
 ```
 kubectl apply -f daemonset.yaml
 ```
@@ -132,7 +133,18 @@ TODO: Insert image verification daemonset<br>
 <br>
 
 ### Expose application within the cluster
-TODOO<br>
+K8s services are used to expose the application within the cluster.<br>
+In this case: NodePort Service.<br>
+NodePort exposes service on a port on all nodes in the cluster.<br>
+<br>
+First, service.yaml is applied:<br>
+
+```
+kubectl apply -f service.yaml
+```
+
+Verification of the service:<br>
+TODO: Insert image verification service<br>
 <br>
 
 ### Create and manage secrets
