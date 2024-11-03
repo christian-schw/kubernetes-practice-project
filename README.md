@@ -93,11 +93,25 @@ Output of application:<br>
 TOOD: Insert image application output<br>
 <br>
 
-
-
-
 ### Set up a ConfigMap
-TODOO<br>
+To decouple environment-specific configuration from the container image, so that the application is easily portable.<br>
+According to the task, literals are to be used in the practical project.<br>
+These are defined with the flag '--from-literal'.<br>
+This makes it possible to create a ConfigMap via CLI.<br>
+<br>
+Two environment variables should be created:<br>
+- Key: server-url, Value: http://example.com
+- Key: timeout, Value: 5000
+<br>
+This results in the following command:<br>
+
+```
+kubectl create configmap myapp-config --from-literal=server-url=http://example.com --from-literal=timeout=5000
+```
+
+Verification of the ConfigMap:<br>
+TODO: Insert image env var configmap<br>
+Data = 2, which means that two environment variables have been created. Everything fits.<br>
 <br>
 
 ### Create a DaemonSet
