@@ -30,14 +30,51 @@ Course Provider: IBM<br>
 
 ### Tech Stack
 With regard to my role:
-- TODOOOOO
+- Containerization Tool: Docker
+- Container Registry: IBM Cloud Container Registry
 - IBM Cloud IDE (based on Theia and Container)
+- Container Orchestration Tool: Kubernetes
 <br>
 <br>
+
+
+
+## What I have done as part of the project
+As a lot of the work was done in the terminal, it is not visible in the repository.<br>
+I therefore explain my completed tasks in the project.<br>
+<br>
+
+### Build and deploy the application to Kubernetes
+TODOO<br>
+<br>
+
+### Set up a ConfigMap
+TODOO<br>
+<br>
+
+### Create a DaemonSet
+TODOO<br>
+<br>
+
+### Expose application within the cluster
+TODOO<br>
+<br>
+
+### Create and manage secrets
+TODOO<br>
+<br>
+
+### Provide storage for application
+TODOO<br>
+<br>
+<br>
+
 
 
 ## Getting Started
-TODOOOO
+The code was only executable with the help of the IBM Cloud IDE.<br>
+The IDE had many necessary tools and accesses preconfigured. These include, for example, Kubernetes installation or IBM Cloud Container Registry.
+<br>
 <br>
 
 
