@@ -54,7 +54,7 @@ The image was then built using the Dockerfile.<br>
 docker build . -t us.icr.io/$MY_NAMESPACE/myapp:v1
 ```
 
-The -t flag was used to set the name and tag of the image according to the IBM Cloud CR naming convention.<br>
+The -t flag was used to set the name and tag of the image according to the IBM course naming convention.<br>
 Result:<br>
 TODO: Insert image docker images<br>
 
