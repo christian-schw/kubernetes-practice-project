@@ -41,13 +41,14 @@ With regard to my role:
 
 ## What I have done as part of the project
 As a lot of the work was done in the terminal, it is not visible in the repository.<br>
-I therefore explain my completed tasks in the project.<br>
+I therefore explain my completed tasks in the project below.<br>
 <br>
 
 ### Build and deploy the application to Kubernetes
 Setup of the environment variable namespace (user name is already predefined in IBM Cloud IDE):<br>
-TODO: Insert image setup env var<br>
-<br>
+
+![setup env var](https://github.com/user-attachments/assets/1614d19f-eb82-478a-8e7a-6a246604ca75)
+
 The image was then built using the Dockerfile.<br>
 
 ```
@@ -56,7 +57,8 @@ docker build . -t us.icr.io/$MY_NAMESPACE/myapp:v1
 
 The -t flag was used to set the name and tag of the image according to the IBM course naming convention.<br>
 Result:<br>
-TODO: Insert image docker images<br>
+
+![docker images](https://github.com/user-attachments/assets/71d10198-9fa1-4c18-9242-115451391641)
 
 After the image has been built, it is pushed into the IBM Container Registry:<br>
 
@@ -65,11 +67,13 @@ docker push us.icr.io/$MY_NAMESPACE/myapp:v1
 ```
 
 Result:<br>
-TODO: Insert image cr images<br>
+
+![ibmcloud cr images](https://github.com/user-attachments/assets/1c94e442-be79-4afc-b067-055765dcbf40)
 
 The K8s object deployment is then created.<br>
 Here the placeholder of the namespace must be replaced with my namespace:<br>
-TODO: Insert image deployment.yaml<br>
+
+![deployment yml](https://github.com/user-attachments/assets/24280b7f-1651-4ace-a9d4-6d593c600d2d)
 
 Apply the deployment:<br>
 
@@ -78,7 +82,8 @@ kubectl apply -f deployment.yml
 ```
 
 Verification of the deployment:<br>
-TODO: Insert image pods<br>
+
+![kubectl pods deployment yml](https://github.com/user-attachments/assets/7a6c8bfb-be3b-45dc-acd3-1d2c51fb85da)
 
 Now start application on port-forward:<br>
 
@@ -90,7 +95,10 @@ Port forwarding in Kubernetes is a mechanism that allows you to access services 
 It's useful for debugging, testing, and accessing services during development.<br>
 <br>
 Output of application:<br>
-TOOD: Insert image application output<br>
+
+![application output](https://github.com/user-attachments/assets/bca4a53b-a9d8-4392-ab07-e8aa32760795)
+
+<br>
 <br>
 
 ### Set up a ConfigMap
@@ -110,8 +118,11 @@ kubectl create configmap myapp-config --from-literal=server-url=http://example.c
 ```
 
 Verification of the ConfigMap:<br>
-TODO: Insert image env var configmap<br>
+
+![verification configmap](https://github.com/user-attachments/assets/d8aea7b7-a236-4950-bcc2-5efb95923cf4)
+
 Data = 2, which means that two environment variables have been created. Everything fits.<br>
+<br>
 <br>
 
 ### Create a DaemonSet
@@ -120,7 +131,8 @@ Result: Enhanced availability and fault tolerance of the application through red
 <br>
 First, the daemonset.yaml file is adjusted.<br>
 Here the placeholder of the namespace must be replaced with my namespace:<br>
-TODO: Insert image adjustment daemonset yaml<br>
+
+![adjust daemonset](https://github.com/user-attachments/assets/274b76c2-f9dd-46af-a97f-1714595381a8)
 
 Next, the daemonset.yaml file is applied:<br>
 
@@ -129,7 +141,10 @@ kubectl apply -f daemonset.yaml
 ```
 
 Verification of the DaemonSet:<br>
-TODO: Insert image verification daemonset<br>
+
+![verification daemonset](https://github.com/user-attachments/assets/6145f823-170f-4ada-ac81-78e844988d7e)
+
+<br>
 <br>
 
 ### Expose application within the cluster
@@ -144,7 +159,9 @@ kubectl apply -f service.yaml
 ```
 
 Verification of the service:<br>
-TODO: Insert image verification service<br>
+
+![verification service](https://github.com/user-attachments/assets/86cc05a1-2b0f-4397-8158-7e42167df1d6)
+
 <br>
 
 ### Create and manage secrets
@@ -162,8 +179,12 @@ kubectl create secret generic myapp-secret --from-literal=username=myuser --from
 ```
 
 Verification of the Secret:<br>
-TODO: Insert image verification secret<br>
+
+![verification secret](https://github.com/user-attachments/assets/9422c5e9-0c4c-4ffb-a22b-88643daf7223)
+
 Again: Data = 2, which means that two environment variables have been created. Everything fits.<br>
+<br>
+<br>
 
 ### Provide storage for application
 To provide storage for the application, two K8s objects are used:
