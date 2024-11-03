@@ -2,7 +2,35 @@
 This repository was created as part of IBM's "Introduction to Containers, Kubernetes and OpenShift" course.<br>
 It's a practice project about Kubernetes using Docker.<br>
 Much of the code was cloned from the IBM repository: https://github.com/ibm-developer-skills-network/containers-project.git<br>
-<br>
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#course-information">Course Information</a>
+    </li>
+    <li>
+      <a href="#information-about-the-project">Information about the Project</a>
+      <ul>
+        <li><a href="#general">General</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#what-i-have-done-as-part-of-the-project">What I have done as part of the project</a></li>
+      <ul>
+        <li><a href="#build-and-deploy-the-application-to-kubernetes">Build and deploy the application to Kubernetes</a></li>
+        <li><a href="#set-up-a-configmap">Set up a ConfigMap</a></li>
+        <li><a href="#create-a-daemonset">Create a DaemonSet</a></li>
+        <li><a href="#expose-application-within-the-cluster">Expose application within the cluster</a></li>
+        <li><a href="#create-and-manage-secrets">Create and manage secrets</a></li>
+        <li><a href="#provide-storage-for-application">Provide storage for application</a></li>
+      </ul>
+    </li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 <br>
 
 
