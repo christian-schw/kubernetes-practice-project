@@ -39,6 +39,7 @@ Much of the code was cloned from the IBM repository: https://github.com/ibm-deve
 Title: Introduction to Containers, Kubernetes and OpenShift<br>
 Type: Practice Project<br>
 Course Provider: IBM<br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -62,6 +63,7 @@ With regard to my role:
 - Container Registry: IBM Cloud Container Registry
 - IBM Cloud IDE (based on Theia and Container)
 - Container Orchestration Tool: Kubernetes
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -126,6 +128,7 @@ Output of application:<br>
 
 ![application output](https://github.com/user-attachments/assets/bca4a53b-a9d8-4392-ab07-e8aa32760795)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -150,6 +153,7 @@ Verification of the ConfigMap:<br>
 ![verification configmap](https://github.com/user-attachments/assets/d8aea7b7-a236-4950-bcc2-5efb95923cf4)
 
 Data = 2, which means that two environment variables have been created. Everything fits.<br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -172,6 +176,7 @@ Verification of the DaemonSet:<br>
 
 ![verification daemonset](https://github.com/user-attachments/assets/6145f823-170f-4ada-ac81-78e844988d7e)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -190,6 +195,8 @@ Verification of the service:<br>
 
 ![verification service](https://github.com/user-attachments/assets/86cc05a1-2b0f-4397-8158-7e42167df1d6)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<br>
 <br>
 
 ### Create and manage secrets
@@ -211,6 +218,7 @@ Verification of the Secret:<br>
 ![verification secret](https://github.com/user-attachments/assets/9422c5e9-0c4c-4ffb-a22b-88643daf7223)
 
 Again: Data = 2, which means that two environment variables have been created. Everything fits.<br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -223,6 +231,7 @@ The definitions of the two objects can be found in the file volume-and-pvc.yaml.
 Both definitions are separated from each other by three dashes (---).<br>
 <br>
 PersistentVolume provides 1 gigabyte of storage and the PVC requests this 1 gigabyte of storage.<br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
@@ -230,10 +239,12 @@ PersistentVolume provides 1 gigabyte of storage and the PVC requests this 1 giga
 ## Getting Started
 The code was only executable with the help of the IBM Cloud IDE.<br>
 The IDE had many necessary tools and accesses preconfigured. These include, for example, Kubernetes installation or IBM Cloud Container Registry.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
 
 
 ## Contact
-If you have any questions, please feel free to reach out via email: christian-schwanse (at) gmx.net
+If you have any questions, please feel free to reach out via email: christian-schwanse (at) gmx.net<br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
