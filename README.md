@@ -2,16 +2,12 @@
 <a id="readme-top"></a>
 
 # Understanding ConfigMaps, DaemonSets, Kubernetes Services, Secrets & Persistent Volume Claims
-This repository was created as part of IBM's "Introduction to Containers, Kubernetes and OpenShift" course.<br>
-It's a practice project about Kubernetes using Docker.<br>
-Much of the code was cloned from the IBM repository: https://github.com/ibm-developer-skills-network/containers-project.git<br>
 <!-- TABLE OF CONTENTS -->
-<details>
+<details open>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#course-information">Course Information</a>
-    </li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#course-information">Course Information</a></li>
     <li>
       <a href="#information-about-the-project">Information about the Project</a>
       <ul>
@@ -36,6 +32,19 @@ Much of the code was cloned from the IBM repository: https://github.com/ibm-deve
 </details>
 <br>
 
+
+## Introduction
+This repository was created as part of IBM's "Introduction to Containers, Kubernetes and OpenShift" course.<br>
+It's a practice project about Kubernetes using Docker.<br>
+Much of the code was cloned from the IBM repository: https://github.com/ibm-developer-skills-network/containers-project.git
+
+![verification daemonset](https://github.com/user-attachments/assets/6145f823-170f-4ada-ac81-78e844988d7e)
+
+![verification service](https://github.com/user-attachments/assets/86cc05a1-2b0f-4397-8158-7e42167df1d6)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<br>
+<br>
 
 
 ## Course Information
